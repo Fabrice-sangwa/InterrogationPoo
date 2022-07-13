@@ -2,7 +2,7 @@ package com.esisalama.www;
 
 public class Chercheur extends Enseignant{
 
-    int salaire;
+    private int salaire;
 
     public Chercheur(String nom, String prenom, int nombreHeures) {
         super(nom, prenom, nombreHeures);

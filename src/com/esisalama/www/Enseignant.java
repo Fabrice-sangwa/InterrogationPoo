@@ -1,10 +1,10 @@
 package com.esisalama.www;
 
 public abstract class Enseignant {
-    String nom;
-    String prenom;
-    int nombreHeures;
-    final int charge = 100;
+    private String nom;
+    private String prenom;
+    private int nombreHeures;
+    private final int charge = 100;
 
     public Enseignant(String nom, String prenom, int nombreHeures) {
         this.nom = nom;
