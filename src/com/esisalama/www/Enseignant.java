@@ -26,6 +26,13 @@ public abstract class Enseignant {
 
     abstract int calculerSalaire();
 
+    @Override
+    public String toString() {
+        return getPrenom() + " " + getNom() + "\n" +
+                "Nombre d'heures : " +getNombreHeures() + "\n" +
+                "Cout A l'Université : " + calculerSalaire();
+    }
+
     public int getCharge() {
         return charge;
     }

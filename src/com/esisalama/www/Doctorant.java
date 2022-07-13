@@ -17,5 +17,4 @@ public class Doctorant extends  Enseignant{
         return salaire + getCharge();
     }
 
-
 }

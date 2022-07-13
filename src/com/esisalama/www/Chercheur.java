@@ -11,12 +11,12 @@ public class Chercheur extends Enseignant{
 
 
     public int calculerSalaire(){
-        int heures = getNombreHeures();
-        if(heures>192){
-            int heureSup = heures - 192;
-            salaire = salaire * 12 * heureSup * 40;
+        int salaireHeureSup;
+        if(getNombreHeures()>192){
+             salaireHeureSup =  (getNombreHeures() - 192) * 40;
+            salaire = salaire * 12 + salaireHeureSup;
         } else {
-            salaire = 200 * 12;
+            salaire = 2000 * 12;
         }
         return  salaire + getCharge();
     }
