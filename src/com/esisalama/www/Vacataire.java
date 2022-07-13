@@ -13,4 +13,13 @@ public class Vacataire extends Enseignant{
         int salaire = 40 * getNombreHeures();
         return  salaire + getCharge();
     }
+
+    @Override
+    public String toString() {
+        return getPrenom() + " " + getNom() + "\n" +
+                "Nombre d'heures : " +getNombreHeures() + "\n" +
+                "Organisme : " + organisme + "\n" +
+                "Cout A l'Université : " + calculerSalaire();
+
+    }
 }
